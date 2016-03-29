@@ -1,0 +1,10 @@
+
+function add(a,a1)
+{
+var a,a1,num;
+num=a+a1;
+document.write("a+a1=");
+document.write(num);
+alert("finished!");
+}
+

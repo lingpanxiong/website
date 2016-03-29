@@ -1,0 +1,20 @@
+body
+{
+	Background-image:url(image/bg.jpg);
+	background-attachment:fixed;
+	background-repeat:repeat-y;
+	background-position:center center;
+}
+#mar
+{
+position:relative;
+top:20%;
+left:30%;
+}
+#mplayer
+{
+position:relative;
+top:80%;
+left:70%;
+
+}

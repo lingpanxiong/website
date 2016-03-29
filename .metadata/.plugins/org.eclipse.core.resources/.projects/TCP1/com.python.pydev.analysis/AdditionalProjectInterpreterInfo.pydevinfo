@@ -1,0 +1,21 @@
+-- VERSION_4
+-- START DISKCACHE_2
+E:\develops\.metadata\.plugins\org.eclipse.core.resources\.projects\TCP1\com.python.pydev.analysis\v2_indexcache
+tpc1|1451552923128174000|E:\develops\TCP1\src\tpc1.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=tpc1
+-- END DICTIONARY
+-- START TREE 1
+6
+add|1|ADDR!11@
+buf|1|BUFSIZE!11@
+dat|1|data!11@
+hos|1|HOST!11@
+por|1|PORT!11@
+tcp|1|tcpSersock!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

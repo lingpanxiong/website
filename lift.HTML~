@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script language="javascript" src="lift.js">
+		</script>
+		<style type="text/css" src="lift.css">
+			body
+		</style>	
+	
+	</head>
+	<body>
+<marquee 
+	onmouseover=this.stop()
+	onmouseout=this.start()
+	scrollamount="1"
+	scrolldelay="10"
+	direction="up"
+	width="250"
+	height="210">
+	<div>
+	<font color="#ff0000"><b>news</b></font>
+</div>
+<div> <img src="../image/proxy.jpg"></div>
+	<div><font color="#003366">Put mouse here!</font></div>
+		
+	</marquee>
+	</body>
+
+</html>

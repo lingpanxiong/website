@@ -1,0 +1,10 @@
+'''
+Created on 2016Äê1ÔÂ17ÈÕ
+@author: iront
+'''
+import urllib2
+url= 'http://www.baidu.com'
+print 'first'
+response1= urllib2.urlopen(url)
+print response1.getcode()
+print len(response1.read())
