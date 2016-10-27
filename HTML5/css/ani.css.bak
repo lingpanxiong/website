@@ -1,0 +1,36 @@
+div
+{
+	background-color:blue;
+	width:100px;
+	height:120px;
+	animation-name:ani;
+	animation:ani 3s;
+	-moz-animation:ani 3s;
+	-webkit-animation:ani 3s;
+	-o-animation:ani 3s;
+	animation-timing-function:ease;
+}
+@keyframes ani
+{
+	from {background:blue;}
+	to	{position:relative;left:150px;top:150px;background:red;}
+
+}
+@-moz-keyframes ani
+{
+	from {background:blue;}
+	to	{position:relative;left:150px;top:150px;background:red;}
+
+}
+@-webkit-keyframes ani
+{
+	from {background:blue;}
+	to	{position:relative;left:150px;top:150px;background:red;}
+
+}
+@-o-keyframes ani
+{
+	from {background:blue;}
+	to	{position:relative;left:150px;top:150px;background:red;}
+
+}

@@ -1,0 +1,97 @@
+
+#divjs
+{
+
+	width: 20%;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#buttonhs
+{
+
+	position: absolute;
+	top:95%;
+	left:60px;
+}
+body
+{
+
+	background-color: AntiqueWhite;
+}
+
+@-webkit-keyframes ani
+{
+	/* %*time line*/
+		0%
+		{
+		position:relative; 
+		left:150px; 
+		top:150px; 
+		background:red;
+		width:200px;
+		height:240px;
+
+		}
+		50%
+		{
+		position:relative; 	
+		left:250px; 
+		top:250px; 
+		background:yellow;
+		width:300px;
+		height:380px;
+		-webkit-transform:rotateZ(130deg);
+		}
+
+		100%
+		{
+		position:relative; 
+		left:450px; 
+		top:450px; 
+		background:green;
+		width:400px;
+		height:450px;
+		-webkit-transform:rotateZ(60deg);
+		}
+		
+}
+#div1 p
+{
+	width:20px;
+	height:20px;
+	color: white;
+	position: relative;
+	left: 50%;
+	top: 0%;
+	text-shadow:2px 2px 2px red;
+	font-size: 50px;
+	font-family: "times";
+	font-weight: normal;
+}
+.bimage
+{
+	width: 320px;
+	height: 450px;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.ltoggle
+{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	left: 85%;
+}
+.indexcanvas
+{
+
+width: 500;
+height: 500;
+
+}
