@@ -137,7 +137,7 @@ $(document).ready
 			function()
 			{
 
-				$(".index").css("height":"150%","background-color":"purple");
+				$(".index").css({"height":"150%"});
 			}
 			
 		);
@@ -147,7 +147,7 @@ $(document).ready
 			function()
 			{
 				
-				$(".index").css("height","20%");
+				$(".index").css({"height":"20%"});
 			}
 			
 		);
