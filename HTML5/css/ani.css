@@ -139,13 +139,16 @@ body
 	top: 20%;
 	width: 80%;
 	height: 60%;
-	background-image: url(../src/pic/2.jpg);
-	overflow: hidden;
+}
+.img
+{	
+	width: 90%;
+	height: 90%;
 }
 
 .inputform
 {
 	position: absolute;
-	left: 49%;
-	top: 90%;
+	left: 40%;
+	top: 85%;
 }

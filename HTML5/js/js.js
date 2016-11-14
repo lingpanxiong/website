@@ -59,7 +59,7 @@ function()
 	);
 
 });
-
+/*左滑动栏*/
 $(document).ready
 (
 
@@ -231,5 +231,38 @@ $(document).ready
 
 	}
 );
+$(document).ready
+(	
+	function()
+	{	var bot=1;
+		$(".nbutton").click
+		(	
+			function()
+			{
+				bot+=1;
+				if(bot==7)
+					bot=1;
+				$(".img").attr("src","src/pic/"+bot+".jpg");
+				$(".page").innerHTML=(bot);
 
+			}
+		);
+
+		$(".bbutton").click
+		(	
+			function()
+			{
+				bot-=1;
+				if(bot==0)
+					bot=6;
+				$(".img").attr("src","src/pic/"+bot+".jpg");
+				$(".page").innerHTML=(bot);
+			}
+		);
+	}
+);
+
+/*
+
+*/
 
