@@ -1,0 +1,67 @@
+body
+{
+	/*background-image: url(sources/longmao.jpg);*/
+	background-color: gray;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#musicbox
+{
+background-color: white;
+background-clip: pandding-box; background-clip border-box content-box;
+width: 300px;
+height: 120px;
+border-style: solid;
+border-radius: 11px;
+position: absolute;
+top:500px;
+left:900px;
+}
+
+button
+{
+	border-style:solid; 
+	border-radius: 8px;
+}
+
+input
+{
+	border-style:solid; 
+	border-radius: 8px;	
+}
+/*
+	border-style: solid;
+	border-radius: 11px;
+*/
+#logwindows
+{	
+
+	width:300px;
+	height:200px;
+	position:relative;
+	left:10%;
+	top:5px;
+}
+#loginbutton
+{
+
+	position: relative;
+	left: 2%;
+}
+#pagefoot
+{
+	position:absolute;
+	left:600px;
+	top: 620px;
+}
+#canvasdiv
+{
+	border: solid;
+	width: 480px;
+	height: 320px;
+}
+
+/*
+
+*/

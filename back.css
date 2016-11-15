@@ -1,0 +1,38 @@
+body
+{
+
+	background-color: black;
+}
+p.p1 
+{
+	/*
+	position: relative;
+	left: 45%;
+	top: 45%;
+	*/
+	font-family: times new roman;
+	color: white;
+	word-spacing: 5px;
+	text-align:center;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 200%;
+}
+p.p2 
+{
+	/*
+	position: relative;
+	left: 45%;
+	top: 45%;
+	*/
+	font-family: times new roman;
+	color: blueviolet;
+	word-spacing: 5px;
+	text-align:center;
+	text-decoration: underline;
+}
+.test
+{
+	: white;
+	list-style: circle;
+}

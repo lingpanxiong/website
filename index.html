@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!--
+<style type="text/css">@import url("index.css");></style>
+<base href="" />               /*all weburl use base url*/
+-->
+<title>Iront's home page.</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript" src="index.js"></script>
+<br />
+</head>
+<body>
+<p><b>Welcom to the world.</b></p>
+	<br /><br />
+<!--music player is hidden  ; -->
+<div id="musicbox" style="-webkit-box-shadow:5px 6px 6px #000">
+<br /><br />
+<audio id="music" autoplay="autoplay" controls="controls"> <!--  controls="controls"-->
+<source src="sources/1.mp3" type="audio/mp3">
+your browser does not support html5 audio.
+</audio>
+	<br /><br />
+
+	<button onclick="playvid()">play</button>
+	<button onclick="pausevid()">pause</button>
+</div>
+<!--登陆窗口-->
+<div id="logwindows">
+<p id="Username">Username</p>
+<input id="usernameinput" autofocus="true" onfocus="onfocusf(this.id)" onblur="onblurf(this.id)" />
+<p id="Username">Password</p>
+<input id="password" type="password" onfocus="onfocusf(this.id)" onblur="onblurf(this.id)" />
+<br>
+
+<!--remember you password
+<div display="none"><input type="radio" id="radiocheck" onclick="radiovaluecheck(this.id)" />
+	<br>
+</div>
+-->
+
+
+<button id="loginbutton">Login</button>
+<br>
+<a href="www.baidu.com">password?</a>
+<br>
+<a href="www.baidu.com">help?</a>
+</div>
+
+<div id="pagefoot">
+<table>
+	<tr>
+	<th><p>
+		<abbr title="Iront">myname</abbr>&版权所有
+	</p></th>
+	</tr>
+</table>
+</div>
+
+
+<!--function defined.-->
+<script type="text/javascript">
+var myvideo=document.getElementById('music')
+play();
+pause();
+onfocusf();
+onblur();
+radiovaluecheck();
+</script>
+
+</body>
+</html>
