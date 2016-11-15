@@ -3,7 +3,9 @@
 <link type="text/css" rel="stylesheet" href="css/ani.css">
 <script type="text/javascript" src="js/jquery-3.1.1/jquery-3.1.1.js"></script>
 
-<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/js.js">
+	
+</script>
 <!--中文支持-->
 <meta charset="utf-8">
 </head>
@@ -12,49 +14,57 @@
 <div id="topbar">
 
 	<div class="index">
-	<p>Home</p><br>
-	<a href="http://www.baidu.com">baidu</a>
+	<p>Home</p>
+	<div class="homelist"><a href="http://www.baidu.com">baidu</a></div>
+	
 	</div>
 
 	<div class="about">
-	<p>About</p><br>
-	<a href="http://www.baidu.com">baidu</a>
+	<p>About</p>
+	<div class="aboutlist"><a href="http://www.baidu.com">baidu</a></div>
+	
 	</div>
 
-	
 	<div class="hr">
-		<p>Hr</p><br>
-		<ul>
-		<li><a href="http://www.baidu.com">baidu</a></li>
-		<li><a href="http://www.baidu.com">baidu1</a></li>
-		<li><a href="http://www.baidu.com">baidu2</a></li>
-		<li><a href="http://www.baidu.com">baidu3</a></li>
-		</ul>
+		<p>Hr</p>
+		<div class="hrlist">
+		<a href="http://www.baidu.com">baidu</a><br>
+		<a href="http://www.baidu.com">baidu</a><br>
+		<a href="http://www.baidu.com">baidu</a><br>
+		<a href="http://www.baidu.com">baidu</a><br>
+		</div>
+		
 	</div>
 
 	
 	<div class="map">
-		<p>Map</p><br>
+		<p>Map</p>
+		<div class="maplist">
 		<a href="http://www.baidu.com">baidu</a>
+		</div>
+		
 	</div>
 
 </div>
 <div class="imagearea">
-	<img src="src/pic/1.jpg" class="img"'>
+	<img src="" class="img"' alt="show">
+	</div>
 	<div class="inputform">
 	<!--name must be same!-->
 	<button class="bbutton">back</button>
 	<button class="nbutton">next</button>
-	<button class="page"></button>
-	</div>
-
 </div>
 
 <div id="divjs">
 	<canvas class="canvas1" width="200" height="300"></canvas>
-	<button class="ltoggle"></button>
+	<p class="username">username:</p>
+	<input type="text" name="username" class="usernameinput"><br>
+	<p class="password">password</p>
+	<input type="password" name="password" class="passwordinput"><br><br>
+	<input type="button" name="login" value="login" class="loginbutton">
+	<button class="lettoggle"></button>
 </div>
 
-
+<p class="author">Design by <a href="http://www.weibo.com/p/1005051307988022/home?from=page_100505&mod=TAB&is_all=1#place">@Iront</a></p>
 </body>
 </html>

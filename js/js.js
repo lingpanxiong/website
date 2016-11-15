@@ -66,7 +66,7 @@ $(document).ready
 function()
 {	
 	var ans=2;
-	$(".ltoggle").click
+	$(".lettoggle").click
 	(
 		function()
 		{
@@ -137,7 +137,7 @@ $(document).ready
 			function()
 			{
 
-				$(".index").css({"height":"150%"});
+				$(".homelist").css("visibility","visible");
 			}
 			
 		);
@@ -147,7 +147,7 @@ $(document).ready
 			function()
 			{
 				
-				$(".index").css({"height":"20%"});
+				$(".homelist").css("visibility","hidden");
 			}
 			
 		);
@@ -164,7 +164,7 @@ $(document).ready
 			function()
 			{
 
-				$(".about").css("height","150%");
+				$(".aboutlist").css("visibility","visible");
 			}
 			
 		);
@@ -173,7 +173,7 @@ $(document).ready
 			function()
 			{
 
-				$(".about").css("height","20%");
+				$(".aboutlist").css("visibility","hidden");
 			}
 			
 		);
@@ -190,7 +190,7 @@ $(document).ready
 			function()
 			{
 
-				$(".hr").css("height","150%");
+				$(".hrlist").css("visibility","visible");
 			}
 			
 		);
@@ -199,7 +199,7 @@ $(document).ready
 			function()
 			{
 
-				$(".hr").css("height","20%");
+				$(".hrlist").css("visibility","hidden");
 			}
 			
 		);
@@ -216,7 +216,7 @@ $(document).ready
 			function()
 			{
 
-				$(".map").css("height","150%");
+				$(".maplist").css("visibility","visible");
 			}
 			
 		);
@@ -224,7 +224,7 @@ $(document).ready
 		(	
 			function()
 			{	
-				$(".map").css("height","20%");
+				$(".maplist").css("visibility","hidden");
 			}
 		
 		);
@@ -243,7 +243,7 @@ $(document).ready
 				if(bot==7)
 					bot=1;
 				$(".img").attr("src","src/pic/"+bot+".jpg");
-				$(".page").innerHTML=(bot);
+				
 
 			}
 		);
@@ -256,10 +256,20 @@ $(document).ready
 				if(bot==0)
 					bot=6;
 				$(".img").attr("src","src/pic/"+bot+".jpg");
-				$(".page").innerHTML=(bot);
+				
+				
 			}
 		);
+		$(document).ready
+		(
+			function(){
+						$(".img").delay(300).attr("src","src/pic/"+bot+".jpg");
+						bot+=1;
+						}
+		);
+		
 	}
+
 );
 
 /*
