@@ -231,6 +231,7 @@ $(document).ready
 
 	}
 );
+//js.html image area
 $(document).ready
 (	
 	function()
@@ -242,9 +243,8 @@ $(document).ready
 				bot+=1;
 				if(bot==7)
 					bot=1;
+				//"+bot+"connect string
 				$(".img").attr("src","src/pic/"+bot+".jpg");
-				
-
 			}
 		);
 
@@ -260,10 +260,11 @@ $(document).ready
 				
 			}
 		);
+		/*自动轮播*/
 		$(document).ready
 		(
 			function(){
-						$(".img").delay(300).attr("src","src/pic/"+bot+".jpg");
+						$(".img").delay(30).attr("src","src/pic/"+bot+".jpg");
 						bot+=1;
 						}
 		);

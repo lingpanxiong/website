@@ -15,8 +15,8 @@ height: 120px;
 border-style: solid;
 border-radius: 11px;
 position: absolute;
-top:500px;
-left:900px;
+top:60%;
+left:70%;
 }
 
 button
@@ -30,10 +30,7 @@ input
 	border-style:solid; 
 	border-radius: 8px;	
 }
-/*
-	border-style: solid;
-	border-radius: 11px;
-*/
+
 #logwindows
 {	
 
@@ -52,8 +49,8 @@ input
 #pagefoot
 {
 	position:absolute;
-	left:600px;
-	top: 620px;
+	left:40%;
+	top: 95%;
 }
 #canvasdiv
 {

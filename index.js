@@ -2,7 +2,7 @@ function playvid () {
 	// body...
 	myvideo.play();
 }
-
+//video pause
 function pausevid () {
 	// body...
 	myvideo.pause();
@@ -11,7 +11,7 @@ function pausevid () {
 /*获取焦点*/
 function onfocusf (x)
 {
-	document.getElementById(x).style.background="purple";
+	document.getElementById(x).style.background="pink";
 
 }
 /*失去焦点*/

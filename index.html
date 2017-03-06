@@ -7,18 +7,22 @@
 -->
 <title>Iront's home page.</title>
 <meta charset="UTF-8">
+<!--external css&javvascript-->
 <link rel="stylesheet" type="text/css" href="index.css">
 <script type="text/javascript" src="index.js"></script>
 <br />
 </head>
+
 <body>
 <p><b>Welcom to the world.</b></p>
 	<br /><br />
-<!--music player is hidden  ; -->
+<!--music player is hidden
+autoplay="autoplay"-->
 <div id="musicbox" style="-webkit-box-shadow:5px 6px 6px #000">
 <br /><br />
-<audio id="music" autoplay="autoplay" controls="controls"> <!--  controls="controls"-->
-<source src="sources/1.mp3" type="audio/mp3">
+<audio id="music"  controls="controls"> 
+<!--  controls="controls" show control toolbar-->
+<source src="src/1.mp3" type="audio/mp3">
 your browser does not support html5 audio.
 </audio>
 	<br /><br />
@@ -29,8 +33,10 @@ your browser does not support html5 audio.
 <!--登陆窗口-->
 <div id="logwindows">
 <p id="Username">Username</p>
+<!-- autofocus：when the page loaded focus.-->
 <input id="usernameinput" autofocus="true" onfocus="onfocusf(this.id)" onblur="onblurf(this.id)" />
-<p id="Username">Password</p>
+<p id="Password">Password</p>
+<!--input password must use type="password"-->
 <input id="password" type="password" onfocus="onfocusf(this.id)" onblur="onblurf(this.id)" />
 <br>
 
@@ -52,7 +58,7 @@ your browser does not support html5 audio.
 <table>
 	<tr>
 	<th><p>
-		<abbr title="Iront">myname</abbr>&版权所有
+		<abbr title="Iront">myname</abbr>&All rights reserved
 	</p></th>
 	</tr>
 </table>
