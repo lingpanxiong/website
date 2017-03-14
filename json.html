@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>json test</title>
+</head>
+<body>
+<p>
+	First Name:<span id="fname"></span><br>
+	Last Name:<span id="lname"></span><br>
+</p>
+<script type="text/javascript">
+	//txt is a json string
+	var txt = 
+	//array []
+	'{"employees":['+
+	//对象{}
+	'{"firstName":"Bill","lastName":"Gates"},'+
+	'{"1":"George","2":"ling"},'+
+	'{"firstName":"Thomas","lastName":"Garter"}]}';
+ 
+	//var obj = eval ("("+ txt +")");
+	//json 2 javascript
+	obj = JSON.parse(txt);
+	document.getElementById("fname").innerHTML=obj.employees[1][1]
+	document.getElementById("lname").innerHTML=obj.employees[1][2]
+</script>
+</body>
+</html>

@@ -1,13 +1,19 @@
 <!DOCTYPE html>
+<!-- 
+	open Database:用现有的数据库或创建新数据库创建数据库对象
+	transaction:允许我们根据情况控制事务提交或回滚
+	executeSql:用于执行真实的的sql查询
+-->
 <html>
 <head>
 	<script type="text/javascript">
 	var db= openDatabase('mydb','1.0','Test DB',2*1024*1024);
 	var msg;
-	<!--"ta" can use like "tx"or others-->
-	db.transaction(function(tx){
-
+	//"ta" can use like "tx"or others web sql database
+	db.transaction(function(tx){ 
+	//create table LOGS1
 	tx.executeSql('CREATE TABLE IF NOT EXISTS LOGS1(id unique,log)');
+	//insert value into table LOGS1 like:(id,"log")
 	tx.executeSql('INSERT INTO LOGS1 (id,log) VALUES (1,"foobar")');
 	tx.executeSql('INSERT INTO LOGS1 (id,log) VALUES (2,"two")');
 	tx.executeSql('INSERT INTO LOGS1 (id,log) VALUES (3,"three")');
@@ -16,17 +22,18 @@
 	});
 
 	db.transaction(function(tx){
-		
-	tx.executeSql('UPDATE LOGS1 SET log="3two" WHERE id=2');
+	//update table LOGS1 like: log="3TWO" WHERE id= 2
+	tx.executeSql('UPDATE LOGS1 SET log="two" WHERE id=2');
 	msg = '<p>Log message created and row inserted.</p>';
 	document.querySelector('#status').innerHTML= msg;
 	});
 
 	db.transaction(function(tx){
+	//type of results is sqlresultset just like c# datatable
 	tx.executeSql('SELECT * FROM LOGS1',[],function(tx,results){
 	//removeAllData();
 	var len=results.rows.length,i;
-	msg="<p>Found rows:"+len+"</p>";
+	msg="<p>Found rows: "+ len +"</p>";
 	document.querySelector("#status").innerHTML+=msg;
 
 	for(i=0;i<len;i++)
@@ -38,8 +45,6 @@
 	},null);
 
 	});
-
-
 	</script>
 </head>
 <body>
